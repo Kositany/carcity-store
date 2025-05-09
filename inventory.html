@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR CITY | Inventory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="inventory.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-car logo-icon"></i>
+                <span class="logo-text">CAR<span>CITY</span></span>
+            </a>
+            <div class="nav-buttons">
+                <a href="tel:+254700123456" class="btn-call">
+                    <i class="fas fa-phone"></i>
+                    Call Us
+                </a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MObile menu -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#inventory">Inventory</a></li>
+        </ul>
+        <a href="tel:+254700123456" class="btn btn-call">
+            <i class="fas fa-phone"></i>
+            Call Us
+        </a>
+    </div>
+
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1 class="page-title">Our Inventory</h1>
+            <p class="page-subtitle">Browse our selection of premium vehicles available in Kenya</p>
+
+            <!-- Filters Section -->
+            <section class="filters">
+                <h2 class="filters-title">Filter Inventory</h2>
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label for="make-filter" class="filter-label">Make</label>
+                        <select id="make-filter" class="filter-select">
+                            <option value="">All Makes</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="model-filter" class="filter-label">Model</label>
+                        <select id="model-filter" class="filter-select" disabled>
+                            <option value="">All Models</option>
+                        </select>
+                    </div>
+
+                    <div class="price-range">
+                        <div class="filter-group">
+                            <label for="min-price" class="filter-label">Min Price (KSh)</label>
+                            <input type="number" id="min-price" class="filter-input" placeholder="Minimum">
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="max-price" class="filter-label">Max Price (KSh)</label>
+                            <input type="number" id="max-price" class="filter-input" placeholder="Maximum">
+                        </div>
+                    </div>
+                </div>
+
+                <button id="reset-filters" class="reset-btn">Reset Filters</button>
+            </section>
+
+            <!-- Inventory Grid -->
+            <section class="inventory-grid" id="inventory-grid">
+                <!-- Inventory items will be dynamically inserted here by JavaScript -->
+            </section>
+        </div>
+    </main>
+
+    <!-- Vehicle Detail Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modal-content">
+                <!-- Modal content will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        CAR<span>CITY</span>
+                    </div>
+                    <p class="footer-about">
+                        Your premier destination for luxury and premium vehicles with exceptional service and
+                        competitive pricing.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="example.html">Inventory</a></li>
+                        <!-- <li><a href="#compare">Compare</a></li> -->
+                        <li><a href="index.html#trade-in">Trade-In</a></li>
+                        <!-- <li><a href="#">Financing</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- <div class="footer-col">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Vehicle Sales</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Detailing</a></li>
+                        <li><a href="#">Insurance</a></li>
+                        <li><a href="#">Roadside Assistance</a></li>
+                    </ul>
+                </div> -->
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>ABC Place, Waiyaki Way, Nairobi</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+254 700 123 456</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@CARCITY.co.ke</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 8:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 CAR CITY. All rights reserved.</p>
+                <!-- <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="inventory.js"></script>
+</body>
+
+</html>
