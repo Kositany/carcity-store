@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="inventory.css">
+
 </head>
 
 <body>
@@ -18,11 +19,13 @@
                 <i class="fas fa-car logo-icon"></i>
                 <span class="logo-text">CAR<span>CITY</span></span>
             </a>
+
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="inventory.html">Inventory</a></li>
-                    <!-- <li><a href="#Compare">Compare</a></li> -->
+                    <li><a href="index.html#trade-in">Trade-In</a></li>
+                    <!-- <li><a href="#compare">Compare</a></li> -->
                 </ul>
             </nav>
             <div class="nav-buttons">
@@ -45,11 +48,25 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="index.html#trade-in">Trade-In</a></li>
         </ul>
-        <a href="tel:+254700123456" class="btn btn-call">
+        <a href="tel:+254700123456" class="btn btn-call" style="margin: 0 auto; width: 15rem; display: flex;">
             <i class="fas fa-phone"></i>
             Call Us
         </a>
+        <css-doodle class="doodle">
+        @grid: 20 / 100vmax / #352c3d;
+        --hue: calc(180 + 1.5 * @x * @y);
+        background: hsla(46, 65%, 52%, 1.2);
+        margin: -.5px;
+        transition: @r(300ms) ease;
+        clip-path: polygon(@pick(
+        '0 0, 100% 0, 100% 100%',
+        '0 0, 100% 0, 0 100%',
+        '0 0, 100% 100%, 0 100%',
+        '100% 0, 100% 100%, 0 100%'
+        ));
+    </css-doodle>
     </div>
 
 
@@ -57,11 +74,15 @@
     <main>
         <div class="container">
             <h1 class="page-title">Our Inventory</h1>
-            <p class="page-subtitle">Browse our selection of premium vehicles available in Kenya</p>
+            <p class="page-subtitle">Browse our selection of vehicles available at Car City</p>
 
             <!-- Filters Section -->
             <section class="filters">
                 <h2 class="filters-title">Filter Inventory</h2>
+                <div class="filter-group">
+                    <label for="search-input" class="filter-label">Search Vehicles</label>
+                    <input type="text" id="search-input" class="filter-input" placeholder="Search by name or model...">
+                </div>
                 <div class="filters-container">
                     <div class="filter-group">
                         <label for="make-filter" class="filter-label">Make</label>
@@ -74,7 +95,7 @@
                         <label for="model-filter" class="filter-label">Model</label>
                         <select id="model-filter" class="filter-select" disabled>
                             <option value="">All Models</option>
-                        </select>
+        </select>
                     </div>
 
                     <div class="price-range">
@@ -122,8 +143,8 @@
                         CAR<span>CITY</span>
                     </div>
                     <p class="footer-about">
-                        Your premier destination for luxury and premium vehicles with exceptional service and
-                        competitive pricing.
+                        Your one stop shop for all your motoring needs.<br>
+                        Find us on our socials below and get your new car!
                     </p>
                     <div class="footer-social">
                         <a href="#" class="social-icon">
@@ -145,7 +166,7 @@
                     <h3 class="footer-title">Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="example.html">Inventory</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
                         <!-- <li><a href="#compare">Compare</a></li> -->
                         <li><a href="index.html#trade-in">Trade-In</a></li>
                         <!-- <li><a href="#">Financing</a></li> -->
@@ -201,6 +222,7 @@
         <i class="fas fa-arrow-up"></i>
     </div>
 
+    <script src="https://unpkg.com/css-doodle@0.36.0/css-doodle.min.js"></script>
     <script src="inventory.js"></script>
 </body>
 
