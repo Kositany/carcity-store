@@ -1,4 +1,3 @@
-
 // Mobile Menu Toggle
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const mobileMenuClose = document.querySelector('.mobile-menu-close');
@@ -23,521 +22,629 @@ mobileMenuLinks.forEach(link => {
     });
 });
 
-
-
-// Enhanced Inventory Data with detailed information
+// Enhanced Inventory Data with detailed information and multiple images
 const inventoryData = [
-    {
-        "id": 1,
-        "name": "Toyota Land Cruiser",
-        "category": "SUV",
-        "price": 15200000,
-        "year": 2020,
-        "engine": "4.5L V8 Diesel",
-        "transmission": "Automatic",
-        "fuelType": "Diesel",
-        "seating": "7",
-        "drive": "4WD",
-        "features": ["Leather Seats", "Sunroof", "Navigation System", "Premium Audio", "Third Row Seating"],
-        "fuelEconomy": "10.5 L/100km",
-        "topSpeed": "210 km/h",
-        "acceleration": "7.8 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
-    },
-    {
-        "id": 2,
-        "name": "Range Rover Sport",
-        "category": "SUV",
-        "price": 12500000,
-        "year": 2022,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1493238792000-8113da705763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-    },
-    {
-        "id": 3,
-        "name": "Mercedes-Benz GLE",
-        "category": "SUV",
-        "price": 9800000,
-        "year": 2021,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80"
-    },
-    {
-        "id": 4,
-        "name": "Porsche 911",
-        "category": "Sports Car",
-        "price": 18700000,
-        "year": 2023,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "4",
-        "drive": "RWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-    },
-    {
+        {
+    "id": 1,
+    "name": "Toyota Prado TZG",
+    "category": "SUV",
+    "price": 8499999,
+    "year": 2018,
+    "engine": "2.8L Diesel",
+    "transmission": "Automatic",
+    "fuelType": "Diesel",
+    "seating": "7",
+    "drive": "4WD",
+    "features": [
+        "Height Control",
+        "Sunroof",
+        "Leather Seats",
+        "Multifunctional Steering Wheel",
+        "Antilocking Brake System (ABS)",
+        "Xenon Headlights",
+        "Headlight Washers",
+        "Electric Adjustable Seats",
+        "Parking Sensors",
+        "Reverse Camera",
+        "360° Camera",
+        "Daytime Running Lights"
+    ],
+    "fuelEconomy": "8.0 L/100km",
+    "topSpeed": "175 km/h",
+    "acceleration": "12.7 seconds (0-100 km/h)",
+    "images": [
+        "Image assets/Toyota Prado TZG/IMG-20250512-WA0041.jpg",
+        "Image assets/Toyota Prado TZG/IMG-20250512-WA0039.jpg",
+        "Image assets/Toyota Prado TZG/IMG-20250512-WA0042.jpg",
+        "Image assets/Toyota Prado TZG/IMG-20250512-WA0044.jpg",
+        "Image assets/Toyota Prado TZG/IMG-20250512-WA0046.jpg",
+        "Image assets/Toyota Prado TZG/IMG-20250512-WA0048.jpg"
+    ]
+},
+{
+  "id": 2,
+  "name": "Mercedes-Benz GLE Coupé",
+  "category": "SUV",
+  "price": 9600000,
+  "year": 2018,
+  "engine": "3.0L V6 Turbocharged Diesel",
+  "transmission": "9-speed (9G-Tronic) Automatic",
+  "fuelType": "Diesel",
+  "seating": "5",
+  "drive": "AWD",
+  "features": [
+    "Panoramic Sunroof",
+    "Powered Leather Seats",
+    "Heated Front Seats",
+    "Daytime Running LED Lights",
+    "Dual-Zone Climate Control",
+    "Multifunction Tilt & Telescopic Steering Wheel",
+    "Alloy Rims",
+    "Side Mirror Indicators",
+    "Push-Start Ignition",
+    "Harman Kardon Sound System",
+    "Mercedes Distronic Cruise Control"
+  ],
+  "fuelEconomy": "9.0 L/100 km",               // Combined WLTP :contentReference[oaicite:0]{index=0}
+  "topSpeed": "226 km/h",                      // Max speed for GLE 350 d Coupé :contentReference[oaicite:1]{index=1}
+  "acceleration": "7.0 seconds (0–100 km/h)",  // WLTP acceleration :contentReference[oaicite:2]{index=2}
+  "images": [
+    "Image assets/2018 Mercedes benz grand coupe/IMG-20250512-WA0014.jpg",
+    "Image assets/2018 Mercedes benz grand coupe/IMG-20250512-WA0015.jpg",
+    "Image assets/2018 Mercedes benz grand coupe/IMG-20250512-WA0012.jpg",
+    "Image assets/2018 Mercedes benz grand coupe/IMG-20250512-WA0011.jpg",
+    "Image assets/2018 Mercedes benz grand coupe/IMG-20250512-WA0023.jpg",
+    "Image assets/2018 Mercedes benz grand coupe/IMG-20250512-WA0018.jpg"
+  ]
+},
+{
+  "id": 3,
+  "name": "Toyota Land Cruiser Prado VX",
+  "category": "SUV",
+  "price": 7799999,
+  "year": 2017,
+  "engine": "2.8L Turbocharged Diesel",
+  "transmission": "6-speed Automatic",
+  "fuelType": "Diesel",
+  "seating": "7",
+  "drive": "4WD",
+  "features": [
+    "Fabric Upholstery",
+    "Driver & Passenger Power Seats",
+    "Push-Start Ignition (SMART START)",
+    "Idling Control Button",
+    "Illuminated Entry System",
+    "Leather-Wrapped Steering Wheel",
+    "Tilt & Telescopic Steering Column",
+    "Pre-wiring for Audio (6 speakers + antenna)",
+    "Power Windows w/ Jam Protection",
+    "Fog Lamp Bezels",
+    "Sunroof",
+    "Intermittent Wipers",
+    "Side & Rear Steps",
+    "Front & Rear Towing Eyes",
+    "L&H Parabola Headlamps",
+    "Driver & Passenger Airbags",
+    "Anti-Theft Alarm & Immobiliser",
+    "Central Door Locking",
+    "Child-Lock Rear Doors",
+    "Isofix Anchor Points",
+    "Vehicle Stability Control",
+    "Wireless Smart-Entry Door Locks"
+  ],
+  "fuelEconomy": "9.2 L/100 km",               // WLTP combined :contentReference[oaicite:3]{index=3}
+  "topSpeed": "170 km/h",                      // VX trim :contentReference[oaicite:4]{index=4}
+  "acceleration": "10.5 seconds (0–100 km/h)", // Approximate 0–100 km/h :contentReference[oaicite:5]{index=5}
+  "images": [
+    "Image assets/2017 land cruiser prado vx/IMG-20250512-WA0029.jpg ",
+    "Image assets/2017 land cruiser prado vx/IMG-20250512-WA0026.jpg", 
+    "Image assets/2017 land cruiser prado vx/IMG-20250512-WA0027.jpg", 
+    "Image assets/2017 land cruiser prado vx/IMG-20250512-WA0028.jpg ",
+    "Image assets/2017 land cruiser prado vx/IMG-20250512-WA0030.jpg", 
+    "Image assets/2017 land cruiser prado vx/IMG-20250512-WA0033.jpg"
+  ]
+},
+{
+  "id": 4,
+  "name": "Subaru Forester e-Boxer",
+  "category": "SUV",
+  "price": 6500000,
+  "year": 2023,
+  "engine": "2.0L Petrol Hybrid",
+  "transmission": "Automatic (Paddle Shifters)",
+  "fuelType": "Hybrid",
+  "seating": "5",
+  "drive": "AWD",
+  "features": [
+    "Half Leather Seats",
+    "Heated Seats",
+    "Power Adjustable Front Seats",
+    "Steering Mounted Paddle Shifts",
+    "Halogen Headlights"
+  ],
+  "fuelEconomy": "8.1 L/100km",         // Combined WLTP 34.9 mpg (imperial) → 282.5/34.9 ≈ 8.1 L/100 km :contentReference[oaicite:0]{index=0}
+  "topSpeed": "187 km/h",              // Max speed 116 mph → 116 × 1.609 ≈ 187 km/h :contentReference[oaicite:1]{index=1}
+  "acceleration": "12.2 seconds (0–100 km/h)", // 0–62 mph in 12.2 s ≈ 0–100 km/h :contentReference[oaicite:2]{index=2}
+  "images": [
+    "Image assets/Subaru Forester e boxer/IMG-20250512-WA0003.jpg",
+    "Image assets/Subaru Forester e boxer/IMG-20250512-WA0001.jpg",
+    "Image assets/Subaru Forester e boxer/IMG-20250512-WA0002.jpg",
+    "Image assets/Subaru Forester e boxer/IMG-20250512-WA0006.jpg",
+    "Image assets/Subaru Forester e boxer/IMG-20250512-WA0007.jpg",
+    "Image assets/Subaru Forester e boxer/IMG-20250512-WA0005.jpg"
+
+  ]
+},
+{
         "id": 5,
-        "name": "BMW X5",
+        "name": "Range Rover Sport 3.0 SDV6 HSE",
         "category": "SUV",
-        "price": 10900000,
-        "year": 2021,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
+        "price": 12999999,
+        "year": 2017,
+        "engine": "3.0L V6 Bi-Turbo Diesel",
+        "transmission": "8-speed Automatic",
+        "fuelType": "Diesel",
         "seating": "5",
         "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1580273916550-e4c0b03e7ba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        "features": [
+            "Dark Leather Seats",
+            "Power Front Seats with Memory",
+            "19-Speaker Sound System",
+            "Reversing Camera",
+            "Mobile Phone Connectivity",
+            "Front & Rear Parking Distance Control",
+            "Power Boot",
+            "Rain Sensing Wipers",
+            "Xenon Headlights with LED Signature",
+            "Rear LED Lights",
+            "Coming/Leaving Home Lights",
+            "Keyless Entry and Drive",
+            "Start/Stop Button",
+            "Automatic Start/Stop System",
+            "Multifunction Steering Wheel",
+            "Leather Steering Wheel",
+            "Power Adjustable Steering Column",
+            "Dual Front, Head, and Side Airbags",
+            "USB/AUX Socket System",
+            "Inbuilt Hard Disk Drive",
+            "Ambient Interior Lighting",
+            "Dual-Zone Climate Control",
+            "Daytime Running LED Lights",
+            "Dusk Sensing Headlights",
+            "Headlight Washers System"
+        ],
+        "fuelEconomy": "7.0 L/100km",
+        "topSpeed": "209 km/h",
+        "acceleration": "7.3 seconds (0–100 km/h)",
+        "images": [
+            "Image assets/Range Rover sport 3.0 HSE/Front-wide-Angle.jpg",
+            "Image assets/Range Rover sport 3.0 HSE/Front.jpg",
+            "Image assets/Range Rover sport 3.0 HSE/Front-wide-Angle-left.jpg",
+            "Image assets/Range Rover sport 3.0 HSE/Back.jpg",
+            "Image assets/Range Rover sport 3.0 HSE/Cock-pit.jpg",
+            "Image assets/Range Rover sport 3.0 HSE/Interior.jpg"
+        ]
     },
     {
         "id": 6,
-        "name": "Toyota Prado",
+        "name": "Nissan X-Trail Hybrid",
         "category": "SUV",
-        "price": 8700000,
-        "year": 2019,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
+        "price": 2699999,
+        "year": 2017,
+        "engine": "2.0L Petrol Hybrid",
+        "transmission": "Automatic (CVT)",
+        "fuelType": "Hybrid",
         "seating": "5",
         "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        "features": [
+            "Traction Control",
+            "Downhill Assist Control (DAC)",
+            "Powered Tailgate",
+            "Leather Seats",
+            "Keyless Entry",
+            "Thumb Start Ignition",
+            "Heated & Cooled Front Seats",
+            "Alloy Rims",
+            "Fog Lights",
+            "Rear View Camera",
+            "Proximity Sensors"
+        ],
+        "fuelEconomy": "6.7 L/100km",
+        "topSpeed": "180 km/h",
+        "acceleration": "8.8 seconds (0–100 km/h)",
+        "images": [
+            "Image assets/Nissan Xtrail Hybrid/front-wide-left.jpg",
+            "Image assets/Nissan Xtrail Hybrid/front.jpg",
+            "Image assets/Nissan Xtrail Hybrid/Back.jpg",
+            "Image assets/Nissan Xtrail Hybrid/front-wide-right.jpg",
+            "Image assets/Nissan Xtrail Hybrid/Cockpit.jpg",
+            "Image assets/Nissan Xtrail Hybrid/cockpit2.jpg"
+        ]
     },
     {
         "id": 7,
-        "name": "Land Rover Defender",
+        "name": "Toyota Land Cruiser Prado TX",
         "category": "SUV",
-        "price": 13800000,
-        "year": 2022,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1624704763134-5619a7a76c5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-    },
-    {
-        "id": 8,
-        "name": "Mercedes-Benz C-Class",
-        "category": "Sedan",
-        "price": 7500000,
-        "year": 2020,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "RWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1616788494707-ec28f08fd05b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-    },
-    {
-        "id": 9,
-        "name": "BMW 3 Series",
-        "category": "Sedan",
-        "price": 6800000,
-        "year": 2019,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "RWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1541899481282-d53b3e38fa9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-    },
-    {
-        "id": 10,
-        "name": "Toyota Hilux",
-        "category": "Pickup",
-        "price": 5200000,
-        "year": 2018,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
+        "price": 7599999,
+        "year": 2017,
+        "engine": "2.8L Turbocharged Diesel",
+        "transmission": "6-speed Automatic",
+        "fuelType": "Diesel",
+        "seating": "7",
         "drive": "4WD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        "features": [
+            "Powered Seats",
+            "7 Leather Seats",
+            "Cruise Control",
+            "Heated Front Seats",
+            "Multifunctional Steering Wheel",
+            "Rear Camera",
+            "LED Daytime Running Lights",
+            "3rd Row Seats",
+            "Headlight Washers",
+            "Multi-Information Display",
+            "Lane Departure Alert",
+            "Dual Climate Control"
+        ],
+        "fuelEconomy": "7.2 L/100km",
+        "topSpeed": "175 km/h",
+        "acceleration": "12.7 seconds (0–100 km/h)",
+        "images": [
+            "Image assets/Toyota Prado TX/Front-wide-left.jpg",
+            "Image assets/Toyota Prado TX/front.jpg",
+            "Image assets/Toyota Prado TX/Back.jpg",
+            "Image assets/Toyota Prado TX/back-wide-right.jpg",
+            "Image assets/Toyota Prado TX/Cockpit.jpg",
+            "Image assets/Toyota Prado TX/Boot.jpg"
+        ]
     },
     {
-        "id": 11,
-        "name": "Audi Q7",
-        "category": "SUV",
-        "price": 9500000,
-        "year": 2021,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
+            "id": 8,
+            "name": "Toyota Hilux Double Cab",
+            "category": "Pickup",
+            "price": 5800000,
+            "year": 2019,
+            "engine": "2.4L Turbocharged Diesel",
+            "transmission": "6-speed Automatic",
+            "fuelType": "Diesel",
+            "seating": "5",
+            "drive": "4WD",
+            "features": [
+                "Dark Fabric Seats",
+                "Multifunctional Steering Wheel",
+                "Power Steering",
+                "Remote Central Locking System",
+                "Fog Lamps",
+                "New Tyres All Round",
+                "AM/FM Radio with 10” Screen Display",
+                "Reverse Camera"
+            ],
+            "fuelEconomy": "7.3 L/100km",
+            "topSpeed": "170 km/h",
+            "acceleration": "12.8 seconds (0–100 km/h)",
+            "images": [
+                "Image assets/Toyota Hilux Double Cabin/front-wide-right.jpg",
+                "Image assets/Toyota Hilux Double Cabin/Front-wide-left.jpg",
+                "Image assets/Toyota Hilux Double Cabin/Front.jpg",
+                "Image assets/Toyota Hilux Double Cabin/Back-wide-left.jpg",
+                "Image assets/Toyota Hilux Double Cabin/Cockpit.jpg",
+                "Image assets/Toyota Hilux Double Cabin/Interior.jpg"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Toyota Hilux Double Cab",
+            "category": "Pickup",
+            "price": 5800000,
+            "year": 2020,
+            "engine": "2.4L Turbocharged Diesel",
+            "transmission": "6-speed Automatic",
+            "fuelType": "Diesel",
+            "seating": "5",
+            "drive": "4WD",
+            "features": [
+                "LED Headlights",
+                "Daytime Running Lights",
+                "Bluetooth Connectivity",
+                "USB/AUX Input",
+                "Blind Spot Monitor",
+                "Electronic Brake Force Distribution",
+                "Power Mirrors",
+                "Centralised Door Lock",
+                "Side Steps",
+                "Reverse Camera",
+                "Adaptive Cruise Control",
+                "Front & Rear Mudguards",
+                "Rear Differential Lock",
+                "Keyless Entry and Start",
+                "Dual-Zone Climate Control",
+                "18-inch Black Alloy Wheels",
+                "Lane Departure Warning",
+                "Traction Control",
+                "Vehicle Stability Control",
+                "Privacy Glass"
+            ],
+            "fuelEconomy": "9.2 L/100km",
+            "topSpeed": "170 km/h",
+            "acceleration": "12.8 seconds (0–100 km/h)",
+            "images": [
+                "Image assets/2020 Toyota Hilux Double CAB/Front-wide-right.jpg",
+                "Image assets/2020 Toyota Hilux Double CAB/front.jpg",
+                "Image assets/2020 Toyota Hilux Double CAB/back.jpg",
+                "Image assets/2020 Toyota Hilux Double CAB/back-wide-right.jpg",
+                "Image assets/2020 Toyota Hilux Double CAB/Cockpit.jpg",
+                "Image assets/2020 Toyota Hilux Double CAB/Interior.jpg",
+                "Image assets/2020 Toyota Hilux Double CAB/steering wheel.jpg"
+            ]
+        },
+            {
+        "id": 10,
+        "name": "Mazda Demio",
+        "category": "Hatchback",
+        "price": 1100000,
+        "year": 2016,
+        "engine": "1.3L SKYACTIV-G Petrol",
+        "transmission": "6-speed Automatic",
         "fuelType": "Petrol",
-        "seating": "7",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1592841200219-5ab338b309b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        "seating": "5",
+        "drive": "FWD",
+        "features": [
+            "Steering Control Buttons",
+            "Antilock Brake System (ABS)",
+            "Xenon Headlights",
+            "Fog Lights",
+            "Rear Spoiler",
+            "Dark Fabric Seats"
+        ],
+        "fuelEconomy": "5.5 L/100km",
+        "topSpeed": "180 km/h",
+        "acceleration": "10.7 seconds (0–100 km/h)",
+        "images": [
+            "Image assets/2016 Mazda Demio/front-wide-left.jpg",
+            "Image assets/2016 Mazda Demio/Front.jpg",
+            "Image assets/2016 Mazda Demio/Back.jpg",
+            "Image assets/2016 Mazda Demio/back-wide-left.jpg",
+            "Image assets/2016 Mazda Demio/Cockpit.jpg",
+            "Image assets/2016 Mazda Demio/cockpit2.jpg"
+        ]
     },
     {
-        "id": 12,
-        "name": "Lexus LX",
-        "category": "SUV",
-        "price": 14200000,
-        "year": 2022,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "7",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-    },
+                "id": 11,
+                "name": "BMW X5 xDrive35i",
+                "category": "SUV",
+                "price": 1700000,
+                "year": 2014,
+                "engine": "3.0L Turbocharged Petrol",
+                "transmission": "8-speed Automatic",
+                "fuelType": "Petrol",
+                "seating": "5",
+                "drive": "AWD",
+                "features": [
+                    "Leather Seats",
+                    "Alloy Wheels"
+                ],
+                "fuelEconomy": "8.5 L/100km",
+                "topSpeed": "235 km/h",
+                "acceleration": "6.5 seconds (0–100 km/h)",
+                "images": [
+                "Image assets/2014 BMW X5/Front-wide-left.jpg",
+                "Image assets/2014 BMW X5/Front.jpg",
+                "Image assets/2014 BMW X5/back.jpg",
+                "Image assets/2014 BMW X5/Back-wide-left.jpg",
+                "Image assets/2014 BMW X5/cockpit.jpg",
+                "Image assets/2014 BMW X5/Interior.jpg"
+                ]
+            },
+            {
+                "id": 12,
+                "name": "Toyota Corolla Fielder Hybrid",
+                "category": "Wagon",
+                "price": 1850000,
+                "year": 2018,
+                "engine": "1.5L Petrol Hybrid",
+                "transmission": "CVT Automatic",
+                "fuelType": "Hybrid",
+                "seating": "5",
+                "drive": "FWD",
+                "features": [
+                    "Power Lock",
+                    "Central Locking",
+                    "Power Steering",
+                    "Power Windows",
+                    "Bluetooth Car Kit",
+                    "Airbags",
+                    "Electric Mirrors",
+                    "Multi-Function Steering Wheel",
+                    "Traction Control",
+                    "Push to Start Ignition"
+                ],
+                "fuelEconomy": "3.3 L/100km",
+                "topSpeed": "180 km/h",
+                "acceleration": "10.2 seconds (0–100 km/h)",
+                "images": [
+                    "Image assets/2018 fielder Hybrid/front-wide-right.jpg",
+                    "Image assets/2018 fielder Hybrid/front.jpg",
+                    "Image assets/2018 fielder Hybrid/back.jpg",
+                    "Image assets/2018 fielder Hybrid/back-wide-left.jpg",
+                    "Image assets/2018 fielder Hybrid/cockpit.jpg",
+                    "Image assets/2018 fielder Hybrid/interior.jpg"
+                ]
+            },
     {
         "id": 13,
-        "name": "Volvo XC90",
+        "name": "Mercedes-Benz GL 350 CDI",
         "category": "SUV",
-        "price": 8900000,
-        "year": 2020,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
+        "price": 3550000,
+        "year": 2011,
+        "engine": "3.0L V6 Turbocharged Diesel",
+        "transmission": "7-speed Automatic",
+        "fuelType": "Diesel",
         "seating": "7",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1633102286587-538c8272b6f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+        "drive": "4WD",
+        "features": [
+            "Leather Seats",
+            "Dual Sunroofs (Front and Rear)",
+            "Reverse Camera",
+            "Parking Sensors",
+            "Headlight Washers",
+            "Roof Rails",
+            "Multifunctional Steering Wheel",
+            "Electric Adjustable Seats",
+            "Power Rear Door",
+            "Daytime Running Lights"
+        ],
+        "fuelEconomy": "10.0 L/100km",
+        "topSpeed": "225 km/h",
+        "acceleration": "7.9 seconds (0–100 km/h)",
+        "images": [
+            "Image assets/2011 Mercedes/front wide right.jpg",
+            "Image assets/2011 Mercedes/front.jpg",
+            "Image assets/2011 Mercedes/back.jpg",
+            "Image assets/2011 Mercedes/back wide right.jpg",
+            "Image assets/2011 Mercedes/cockpit.jpg",
+            "Image assets/2011 Mercedes/interior 1.jpg"
+        ]
     },
     {
         "id": 14,
-        "name": "Jeep Wrangler",
-        "category": "SUV",
-        "price": 8500000,
-        "year": 2021,
-        "engine": "3.0L TwinPower Petrol",
+        "name": "Nissan Juke",
+        "category": "Crossover",
+        "price": 900000,
+        "year": 2012,
+        "engine": "1.5L Petrol",
         "transmission": "Automatic",
         "fuelType": "Petrol",
         "seating": "5",
-        "drive": "4WD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        "drive": "FWD",
+        "features": [
+            "Keyless Entry",
+            "Rear View Camera",
+            "DVD/CD Player",
+            "Pre-collision Assist",
+            "Fabric Seats",
+            "Thumb Start Ignition",
+            "Fog Lights"
+        ],
+        "fuelEconomy": "6.3 L/100km",
+        "topSpeed": "170 km/h",
+        "acceleration": "11.5 seconds (0–100 km/h)",
+        "images": [
+            "Image assets/Nissan Juke/front wide left.jpg",
+            "Image assets/Nissan Juke/front.jpg",
+            "Image assets/Nissan Juke/back.jpg",
+            "Image assets/Nissan Juke/back wide right.jpg",
+            "Image assets/Nissan Juke/cockpit.jpg",
+            "Image assets/Nissan Juke/interior.jpg"
+        ]
     },
     {
         "id": 15,
-        "name": "Ford Ranger",
-        "category": "Pickup",
-        "price": 6200000,
-        "year": 2019,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
+        "name": "Porsche Cayenne GTS",
+        "category": "SUV",
+        "price": 7499999,
+        "year": 2018,
+        "engine": "3.6L Twin-Turbocharged V6 Petrol",
+        "transmission": "8-speed Automatic",
         "fuelType": "Petrol",
         "seating": "5",
-        "drive": "4WD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=rb-4.0.3&ixid=..."
+        "drive": "AWD",
+        "features": [
+            "Powered Front Seats",
+            "Premium BOSE Surround Sound System",
+            "Sunroof",
+            "Paddle Shifters",
+            "Cruise Control",
+            "Hill Descent Assist",
+            "Front and Rear Cameras",
+            "Premium Beige Leather Seats",
+            "7.2” Touchscreen Infotainment System",
+            "Apple CarPlay and Android Auto Integration"
+        ],
+        "fuelEconomy": "9.2 L/100km",
+        "topSpeed": "265 km/h",
+        "acceleration": "5.2 seconds (0–100 km/h)",
+        "images": [
+            "Image assets/porsche cayenne2018/right side.jpg",
+            "Image assets/porsche cayenne2018/back.jpg",
+            "Image assets/porsche cayenne2018/back wide left.jpg",
+            "Image assets/porsche cayenne2018/sunroof.jpg",
+            "Image assets/porsche cayenne2018/steering.jpg",
+            "Image assets/porsche cayenne2018/interior.jpg",
+            "Image assets/porsche cayenne2018/back.jpg"
+        ]
     },
     {
         "id": 16,
-        "name": "Mitsubishi Pajero",
-        "category": "SUV",
-        "price": 7800000,
-        "year": 2018,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
+        "name": "Toyota Voxy",
+        "category": "Minivan",
+        "price": 2599999,
+        "year": 2017,
+        "engine": "2.0L Petrol",
+        "transmission": "CVT",
         "fuelType": "Petrol",
         "seating": "7",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
+        "drive": "FWD",
+        "features": [
+            "Fabric Upholstery",
+            "Side Mirror Winkers",
+            "Alloy Rims",
+            "Multifunctional Steering Wheel Controls",
+            "Traction Control",
+            "Reverse Camera",
+            "FM/DVD Touchscreen Player",
+            "Dual Zone Climate Control"
+        ],
+        "fuelEconomy": "6.3 L/100km",
+        "topSpeed": "180 km/h",
+        "acceleration": "11.0 seconds (0–100 km/h)",
+        "images": [
+            "Image assets/2017 toyota voxy/front wide left.jpg",
+            "Image assets/2017 toyota voxy/front.jpg",
+            "Image assets/2017 toyota voxy/back.jpg",
+            "Image assets/2017 toyota voxy/backwide right.jpg",
+            "Image assets/2017 toyota voxy/cockpit.jpg",
+            "Image assets/2017 toyota voxy/cockpit2.jpg",
+            "Image assets/2017 toyota voxy/interior.jpg"
+        ]
     },
     {
         "id": 17,
-        "name": "Nissan Patrol",
-        "category": "SUV",
-        "price": 11500000,
-        "year": 2021,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "7",
-        "drive": "4WD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 18,
-        "name": "Subaru Forester",
-        "category": "SUV",
-        "price": 5800000,
-        "year": 2020,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 19,
-        "name": "Honda CR-V",
-        "category": "SUV",
-        "price": 6500000,
-        "year": 2019,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 20,
-        "name": "Volkswagen Tiguan",
-        "category": "SUV",
-        "price": 7200000,
-        "year": 2020,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 21,
-        "name": "Toyota RAV4",
-        "category": "SUV",
-        "price": 6800000,
-        "year": 2021,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 22,
-        "name": "Mazda CX-5",
-        "category": "SUV",
-        "price": 6200000,
-        "year": 2020,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 23,
-        "name": "Kia Sorento",
-        "category": "SUV",
-        "price": 5900000,
-        "year": 2019,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "7",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 24,
-        "name": "Hyundai Tucson",
-        "category": "SUV",
-        "price": 5500000,
-        "year": 2018,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 25,
-        "name": "Chevrolet Trailblazer",
-        "category": "SUV",
-        "price": 7200000,
-        "year": 2021,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 26,
-        "name": "Isuzu D-Max",
+        "name": "Toyota Hilux Double Cab",
         "category": "Pickup",
         "price": 5800000,
-        "year": 2020,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
+        "year": 2018,
+        "engine": "2.8L Turbocharged Diesel",
+        "transmission": "6-speed Automatic",
+        "fuelType": "Diesel",
         "seating": "5",
         "drive": "4WD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Kamera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 27,
-        "name": "Suzuki Vitara",
-        "category": "SUV",
-        "price": 4800000,
-        "year": 2019,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 28,
-        "name": "Peugeot 3008",
-        "category": "SUV",
-        "price": 5200000,
-        "year": 2020,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 29,
-        "name": "Renault Duster",
-        "category": "SUV",
-        "price": 4500000,
-        "year": 2018,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "5",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"],
-        "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
-    },
-    {
-        "id": 30,
-        "name": "Toyota Fortuner",
-        "category": "SUV",
-        "price": 8200000,
-        "year": 2021,
-        "engine": "3.0L TwinPower Petrol",
-        "transmission": "Automatic",
-        "fuelType": "Petrol",
-        "seating": "7",
-        "drive": "AWD",
-        "features": ["Leather Seats", "Navigation System", "Bluetooth", "Backup Camera"], "fuelEconomy": "9.8 L/100km",
-        "topSpeed": "220 km/h",
-        "acceleration": "6.5 seconds (0-100 km/h)",
-        "image": "https://images.unsplash.com/photo-1631725995808-41b77f8a1442?ixlib=..."
+        "features": [
+            "Dark Fabric Seats",
+            "Multifunctional Steering Wheel",
+            "Power Steering",
+            "Power Windows",
+            "Remote Central Locking System",
+            "Fog Lamps",
+            "New Tyres All Round",
+            "AM/FM Radio with 10” Screen Display",
+            "Reverse Camera"
+        ],
+        "fuelEconomy": "8.5 L/100km",
+        "topSpeed": "175 km/h",
+        "acceleration": "10.7 seconds (0–100 km/h)",
+        "images": [
+            "Image assets/2018 Hilux white/front wide right.jpg",
+            "Image assets/2018 Hilux white/front.jpg",
+            "Image assets/2018 Hilux white/back.jpg",
+            "Image assets/2018 Hilux white/back wide right.jpg",
+            "Image assets/2018 Hilux white/cockpit.jpg",
+            "Image assets/2018 Hilux white/steering.jpg",
+            "Image assets/2018 Hilux white/steering.jpg"
+        ]
     }
 
-    // The remaining vehicles would continue here...
+
+    // Add more vehicles with multiple images as needed...
 ];
 
 // DOM Elements
@@ -551,6 +658,7 @@ const modalOverlay = document.getElementById('modal-overlay');
 const modal = document.getElementById('modal');
 const modalContent = document.getElementById('modal-content');
 const modalClose = document.getElementById('modal-close');
+const searchInput = document.getElementById('search-input');
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', () => {
@@ -635,33 +743,35 @@ scrollTop.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
 /**
  * Filters inventory items based on current filter selections
  * @returns {Array} - Filtered array of inventory items
  */
 function filterInventory() {
-    const selectedMake = makeFilter.value;
-    const selectedModel = modelFilter.value;
-    const minPrice = parseFloat(minPriceFilter.value) || 0;
-    const maxPrice = parseFloat(maxPriceFilter.value) || Infinity;
+            const selectedMake = makeFilter.value;
+            const selectedModel = modelFilter.value;
+            const minPrice = parseFloat(minPriceFilter.value) || 0;
+            const maxPrice = parseFloat(maxPriceFilter.value) || Infinity;
+            const searchTerm = searchInput.value.trim().toLowerCase();
 
-    return inventoryData.filter(item => {
-        // Extract make and model from name
-        const [make, ...modelParts] = item.name.split(' ');
-        const model = modelParts.join(' ');
+            return inventoryData.filter(item => {
+                const [make, ...modelParts] = item.name.split(' ');
+                const model = modelParts.join(' ');
+                const itemName = item.name.toLowerCase();
 
-        // Filter by make if selected
-        if (selectedMake && make !== selectedMake) return false;
+                // Search filter
+                if (searchTerm && !itemName.includes(searchTerm)) return false;
+                
+                // Existing filters
+                if (selectedMake && make !== selectedMake) return false;
+                if (selectedModel && model !== selectedModel) return false;
+                if (item.price < minPrice || item.price > maxPrice) return false;
 
-        // Filter by model if selected
-        if (selectedModel && model !== selectedModel) return false;
+                return true;
+            });
+        }
 
-        // Filter by price range
-        if (item.price < minPrice || item.price > maxPrice) return false;
-
-        return true;
-    });
-}
 
 /**
  * Displays inventory items in the grid
@@ -697,7 +807,7 @@ function displayInventoryItems(items) {
         card.className = 'inventory-card';
         card.innerHTML = `
                     <div class="card-image">
-                        <img src="${item.image}" alt="${item.name}">
+                        <img src="${item.images[0]}" alt="${item.name}">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">${item.name}</h3>
@@ -726,7 +836,7 @@ function displayInventoryItems(items) {
 }
 
 /**
- * Shows detailed view of a vehicle in a modal
+ * Shows detailed view of a vehicle in a modal with image gallery
  * @param {number} vehicleId - ID of the vehicle to show
  */
 function showVehicleDetails(vehicleId) {
@@ -735,10 +845,24 @@ function showVehicleDetails(vehicleId) {
 
     if (!vehicle) return;
 
-    // Create modal content
+    // Create modal content with image gallery
     modalContent.innerHTML = `
-                <div class="modal-image">
-                    <img src="${vehicle.image}" alt="${vehicle.name}">
+                <div class="gallery-container">
+                    <img src="${vehicle.images[0]}" alt="${vehicle.name}" class="gallery-main-image" id="gallery-main-image">
+                    <div class="gallery-thumbnails">
+                        ${vehicle.images.map((img, index) => `
+                            <img src="${img}" alt="Thumbnail ${index + 1}" class="gallery-thumbnail ${index === 0 ? 'active' : ''}" 
+                                 data-index="${index}" onclick="changeGalleryImage(${vehicleId}, ${index})">
+                        `).join('')}
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="gallery-nav-btn" onclick="navigateGallery(${vehicleId}, -1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery-nav-btn" onclick="navigateGallery(${vehicleId}, 1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="modal-details">
                     <h2>${vehicle.name}</h2>
@@ -804,6 +928,56 @@ function showVehicleDetails(vehicleId) {
 }
 
 /**
+ * Changes the main gallery image when a thumbnail is clicked
+ * @param {number} vehicleId - ID of the vehicle
+ * @param {number} index - Index of the image to show
+ */
+function changeGalleryImage(vehicleId, index) {
+    const vehicle = inventoryData.find(item => item.id === vehicleId);
+    if (!vehicle || !vehicle.images[index]) return;
+
+    // Update main image
+    const mainImage = document.getElementById('gallery-main-image');
+    mainImage.src = vehicle.images[index];
+
+    // Update active thumbnail
+    const thumbnails = document.querySelectorAll('.gallery-thumbnail');
+    thumbnails.forEach(thumb => {
+        thumb.classList.remove('active');
+        if (parseInt(thumb.dataset.index) === index) {
+            thumb.classList.add('active');
+        }
+    });
+}
+
+/**
+ * Navigates through gallery images using navigation buttons
+ * @param {number} vehicleId - ID of the vehicle
+ * @param {number} direction - 1 for next, -1 for previous
+ */
+function navigateGallery(vehicleId, direction) {
+    const vehicle = inventoryData.find(item => item.id === vehicleId);
+    if (!vehicle) return;
+
+    // Find current active thumbnail
+    const activeThumb = document.querySelector('.gallery-thumbnail.active');
+    if (!activeThumb) return;
+
+    let currentIndex = parseInt(activeThumb.dataset.index);
+    let newIndex = currentIndex + direction;
+
+    // Handle wrap-around for continuous navigation
+    if (newIndex < 0) {
+        newIndex = vehicle.images.length - 1;
+    } else if (newIndex >= vehicle.images.length) {
+        newIndex = 0;
+    }
+
+    // Change to the new image
+    changeGalleryImage(vehicleId, newIndex);
+}
+
+/**
  * Hides the vehicle details modal
  */
 function hideVehicleDetails() {
@@ -815,6 +989,7 @@ function hideVehicleDetails() {
  * Resets all filters to their default state
  */
 function resetFilters() {
+    searchInput.value = '';
     makeFilter.value = '';
     modelFilter.value = '';
     modelFilter.disabled = true;
@@ -829,6 +1004,10 @@ function resetFilters() {
  * Sets up event listeners for filters and buttons
  */
 function setupEventListeners() {
+    searchInput.addEventListener('input', () => { // Added
+                const filteredItems = filterInventory();
+                displayInventoryItems(filteredItems);
+    });
     // Make filter change event
     makeFilter.addEventListener('change', () => {
         populateModelFilter(makeFilter.value);
@@ -873,3 +1052,8 @@ function setupEventListeners() {
         }
     });
 }
+
+// Make gallery functions available globally
+window.changeGalleryImage = changeGalleryImage;
+window.navigateGallery = navigateGallery;
+
