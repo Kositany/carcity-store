@@ -2,7 +2,7 @@
 :root {
     --primary-color: #b3001b;
     /* Red from Car City logo */
-    --secondary-color: #d4af37;
+    --secondary-color: hsl(46, 65%, 52%);
     /* Gold/yellow from Car City logo */
     --dark-color: #333333;
     --light-color: #ffffff;
@@ -137,7 +137,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .logo {
@@ -151,6 +151,7 @@ header {
     color: var(--secondary-color);
     margin-right: 10px;
     font-size: 1.8rem;
+    /* padding:10px; */
 }
 
 .logo-text {
@@ -203,6 +204,7 @@ nav ul li a:hover::after {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    /* padding: 10px; */
 }
 
 /* Hero Section */
@@ -210,7 +212,7 @@ nav ul li a:hover::after {
     height: 100vh;
     min-height: 800px;
     background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.9)),
-        url("https://images.unsplash.com/photo-1726003517354-681d9800331b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
+        url("Image assets/2018 Mercedes benz grand coupe/IMG-20250512-WA0013.jpg") no-repeat center center/cover;
     display: flex;
     align-items: center;
     color: white;
@@ -926,4 +928,13 @@ a .menuMobile-btn{
     .mobile-vehicle-card {
         min-width: 85vw;
     }
+}
+
+
+css-doodle.doodle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: .04;
 }
