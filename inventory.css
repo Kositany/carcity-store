@@ -1,3 +1,4 @@
+
 /* Base Styles */
 :root {
     --primary-color: #b3001b;
@@ -565,3 +566,104 @@ a .mobile-menu-btn {
             text-decoration: none;
             list-style: none;
         }
+
+/*  Styles for image gallery */
+.gallery-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gallery-main-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.gallery-main-image:hover {
+    opacity: 0.9;
+}
+
+.gallery-thumbnails {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.gallery-thumbnail {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.gallery-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.gallery-thumbnail.active {
+    border-color: var(--primary-color);
+}
+
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.gallery-nav-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: all;
+    transition: var(--transition);
+}
+
+.gallery-nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-nav-btn i {
+    font-size: 1.2rem;
+}
+/* Add search input styling */
+        #search-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        #search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(179, 0, 27, 0.2);
+        }
+
+    css-doodle.doodle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: .04;
+}
